@@ -24,18 +24,28 @@ Paso a paso
 
 3. Abrir el Shell.
 
-4. Desde el Shell, muevase a la ubicacion donde extrajo el archivo .ZIP (Deberia estar dentro de la carpeta llamada  "AREP-PARCIAL2-master").
+4. Desde el Shell, muevase a la ubicacion donde extrajo el archivo .ZIP (Deberia estar dentro de la carpeta llamada  "INTRODUCCION-A-LARGE-LANGUAGE-MODELS-master").
 
-5. Escriba "mvn clean install".
+5. Debe configurar las variables de entorno definidas en el programa "basic_tool.py".
 
-6. Escriba java -cp "target/classes;target/dependency/* co.edu.escuelaing.app.Collatz
+![image](https://github.com/TeranRyl/INTRODUCCION-A-LARGE-LANGUAGE-MODELS/assets/81679109/803372bd-f639-4693-928c-9ad721153696)
 
-   Si tiene linux, debe reemplazar ";" por ":".
+```
 
-7. Abra su navegador web de y busque en una pestaña incognita:
-   
-   - "localhost:4567" - Cliente web.
-   - "localhost:4567/collatz?value=*numero a calcular collatz*" - Servicio GET
+`PINECONE_API_KEY`: Clave API en el agente AI de Pinecone
+
+`PINECONE_ENVIRONMENT`: Ambiente de la clave API en el agente AI de Pinecone. Si esta utilizando Pinecone Starter Version, este valor deberia ser "gcp-starter".
+
+`OPENAI_API_KEY`: Clave API de OpenAI, obtenida de "https://platform.openai.com/account/api-keys"
+
+Para establecer una variable de entorno en la linea de comandos (CMD) utilice el comando "set". Puede tomar de referencia el siguiente ejemplo:
+
+`set PINECONE_ENVIRONMENT="gcp-starter"`
+
+```
+6. Escriba Python basic_tool.py para ejecutar el script.
+
+7. El sistema le pedira que escriba una consulta relacionada al FAQS de algunas carreras de la universidad Escuela Colombiana de Ingenieria Julio Garavito
 
 ```
 
