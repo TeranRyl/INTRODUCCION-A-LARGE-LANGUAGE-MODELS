@@ -55,25 +55,28 @@ Para establecer una variable de entorno en la linea de comandos (CMD) utilice el
 
 ## Evaluacion
 
-Pruebas de app web funcionando:
+Al ejecutar el script Python deberia ver algo asi:
 
-Cliente web desde Docker:
+![image](https://github.com/TeranRyl/INTRODUCCION-A-LARGE-LANGUAGE-MODELS/assets/81679109/a919dc67-4144-474c-9830-3b955380981a)
 
+No se pudieron hacer mas pruebas debido a que la clave de OpenAI fue borrada.
 
-
-
-Servicio GET desde Docker:
-
-
-
-
-Prueba de demostracion de despliegue de la aplicacion web realizada utilizando EC2 (AWS):
 
 
 
 ## Implementacion
 
 ### Arquitectura
+
+### Pinecone
+
+#### Clave API en el agente AI
+
+![image](https://github.com/TeranRyl/INTRODUCCION-A-LARGE-LANGUAGE-MODELS/assets/81679109/c77a6f3a-4afb-415d-a291-73c259f554f8)
+
+### Base de datos de vectores en el agente AI
+
+![image](https://github.com/TeranRyl/INTRODUCCION-A-LARGE-LANGUAGE-MODELS/assets/81679109/0bf46fef-fd36-4b29-bf9a-f4c9295a4003)
 
 
 ## Construido con
