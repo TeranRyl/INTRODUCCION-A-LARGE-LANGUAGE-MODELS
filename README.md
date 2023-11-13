@@ -46,9 +46,10 @@ Para establecer una variable de entorno en la linea de comandos (CMD) utilice el
 ```
 6. Escriba Python basic_tool.py para ejecutar el script.
 
-7. El sistema le pedira que escriba una consulta relacionada al FAQS de algunas carreras de la universidad Escuela Colombiana de Ingenieria Julio Garavito
-
+7. El sistema le pedira que escriba una consulta relacionada al FAQS de algunos programas de la universidad Escuela Colombiana de Ingenieria Julio Garavito. Puede preguntar algo parecido a:
 ```
+
+`¿Cuantos años de acreditación tiene ingeniería de industrial?`
 
 
 
