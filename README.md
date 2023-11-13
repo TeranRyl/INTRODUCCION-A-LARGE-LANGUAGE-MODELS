@@ -68,6 +68,20 @@ No se pudieron hacer mas pruebas debido a que la clave de OpenAI fue borrada.
 
 ### Arquitectura
 
+Se utilizo un modelo de lenguaje de chat de OpenAI junto con Pinecone para crear un sistema de consulta y respuesta basado en la similitud del contenido de los documentos anexos. El sistema puede responder a saludos y buscar en el conjunto de documentos para responder a las consultas del usuario.
+
+Inicialización de `Pinecone` y `OpenAI Embeddings`: Se inicializa Pinecone con una clave API y un entorno, y se inicializan las incrustaciones de OpenAI.
+
+Definición de `tools`: Se definen dos tools, `say_hello` y `search`, que se utilizan para responder cuando alguien dice hola y para consultar documentos y generar una respuesta, respectivamente.
+
+Función `main`: En la función principal main, se inicializa un modelo de lenguaje de chat de OpenAI (`ChatOpenAI`) con una temperatura de 0. Luego, se inicializa un agente con las tools definidas anteriormente, el modelo de lenguaje de chat y el tipo de agente `AgentType.OPENAI_FUNCTIONS`. Después de la inicialización, el agente se ejecuta con la entrada `Hello! My name is Juan`.
+
+Creación del índice `Pinecone`: Se crea un índice Pinecone con una dimensión de 1536 y una métrica de `cosine`.
+
+Lectura y procesamiento de archivos de texto: Se leen varios archivos de texto y se procesan con la función `Pinecone.from_texts`, que genera incrustaciones para los textos y los almacena en el índice Pinecone.
+
+`Query` y respuesta: Finalmente, se solicita al usuario que introduzca una consulta, que luego se pasa a la herramienta de búsqueda. Los resultados de la búsqueda se pasan al agente para generar una respuesta.
+
 ### Pinecone
 
 #### Clave API en el agente AI
