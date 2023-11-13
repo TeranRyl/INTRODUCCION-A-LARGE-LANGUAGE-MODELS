@@ -7,7 +7,7 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores.pinecone import Pinecone
 
 # Pinecone and OpenAI Embedding initialization
-pinecone.init(api_key=os.getenv("PINECONE_API_KEY"), environment='gcp-starter')
+pinecone.init(api_key=os.getenv("PINECONE_API_KEY"), environment=os.getenv("PINECONE_ENVIRONMENT"))
 embeddings = OpenAIEmbeddings()
 
 
@@ -57,7 +57,8 @@ def main():
     data = Pinecone.from_texts(texts=text.readlines(), embedding=embeddings, index_name=pinecone_index)
     """ End of teacher's code fragment"""
 
-    print(agent.run(search("¿Cuantos años de acreditación tiene ingeniería de industrial?", pinecone_index)))
+    query = input("Por favor digite su consulta (FAQs de ECI): ")
+    print(agent.run(search(query, pinecone_index)))
 
 
 if __name__ == "__main__":
