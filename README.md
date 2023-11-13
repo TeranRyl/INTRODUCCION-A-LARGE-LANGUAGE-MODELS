@@ -88,7 +88,7 @@ Lectura y procesamiento de archivos de texto: Se leen varios archivos de texto y
 
 ![image](https://github.com/TeranRyl/INTRODUCCION-A-LARGE-LANGUAGE-MODELS/assets/81679109/c77a6f3a-4afb-415d-a291-73c259f554f8)
 
-### Base de datos de vectores en el agente AI
+#### Base de datos de vectores en el agente AI
 
 ![image](https://github.com/TeranRyl/INTRODUCCION-A-LARGE-LANGUAGE-MODELS/assets/81679109/0bf46fef-fd36-4b29-bf9a-f4c9295a4003)
 
@@ -97,7 +97,8 @@ Lectura y procesamiento de archivos de texto: Se leen varios archivos de texto y
 
 * [Python](https://www.python.org/) - Lenguaje de programacion
 * [Git/Github](https://git-scm.com/) - Control de versiones
-* [IntelliJ IDEA](https://www.jetbrains.com/idea/) - IDE 
+* [IntelliJ IDEA](https://www.jetbrains.com/idea/) - IDE
+* [Pinecone](https://www.pinecone.io/) - Base de datos de vectores
 
 ## Autores
 
